@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>لوحة صاحب الملعب — الالتراس (نسخة تجريبية)</title>
+<meta name="description" content="لوحة إدارة تجريبية ببيانات وهمية — مفيش دفع أو تواصل حقيقي.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎛️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Noto+Color+Emoji&display=swap">
+<link rel="stylesheet" href="demo-app.css">
+<style>html,body{margin:0;padding:0;background:#070d0a;}</style>
+</head>
+<body>
+<div class="ultras-host" dir="rtl" lang="ar"></div>
+<script type="module">
+import './demo-store.js';
+import { ADMIN_HTML } from './demo-html.js';
+import { mountAdmin } from './demo-admin.js';
+const host = document.querySelector('.ultras-host');
+host.innerHTML = ADMIN_HTML;
+mountAdmin();
+</script>
+</body>
+</html>
